@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMG 27</title>
+</head>
+<body>
+
+<form action="/" method="POST" enctype="multipart/form-data">
+    <table class="">
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Pavement Type:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                         name="pavType" id="pavType">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="Flexible">Flexible</option>
+                    <option value="Rigid">Rigid</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Design ACN:</label><input type="text" class="" style="width:200px;" name="acnDesign"
+                                                     id="acnDesign">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Gear Type:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                     name="gearDrop" id="gearDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="Single">Single</option>
+                    <option value="Dual">Dual</option>
+                    <option value="Dual-tandem">Dual-tandem</option>
+                    <option value="Dual-tandem">Tridem</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Coverages:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                     name="coveragesDrop" id="coveragesDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>CBR Value:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                     name="cbrDrop" id="cbrDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Base Material:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                         name="materialDrop" id="materialDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="BBM">BBM</option>
+                    <option value="HSBBM">HSBBM</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>K Value:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                   name="kDrop" id="kDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-inline">
+                    <label>Concrete Strength:</label><select class="custom-select custom-select-sm" style="width:200px;"
+                                                             name="concreteDrop" id="concreteDrop">
+                    <option value="" disabled selected>Select item</option>
+                    <option value="F5">F5</option>
+                    <option value="F6">F6</option>
+                </select>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <Button class="btn btn-primary btn-sm" type="submit" formaction="/calculate" style="margin-left: 5px;">Calculate
+    </Button>
+</form>
+</body>
+</html>
