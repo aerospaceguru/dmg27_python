@@ -6,15 +6,24 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
-    return render_template('home.html')
+    return render_template('pavcalculator.html')
 
 
 @app.route("/calculate", methods=['GET', 'POST'])
 def result():
-    if request.form['pavType'] == "Rigid":
-        result = rigid()
-    else:
-        result = flexible()
+    try:
+        if request.form['pavType'] == "Rigid":
+            try:
+                result = rigid()
+            except:
+                return "Error. Please check all inputs have been entered."
+        else:
+            try:
+                result = flexible()
+            except:
+                return "Error. Please check all inputs have been entered."
+    except:
+        return "Error. Please enter pavement type."
 
     return render_template('calculation.html', result=result)
 
@@ -298,9 +307,8 @@ def rigid():
         elif 69 <= k <= 79:
             if answer >= boundaryDtan79:
                 dlc = "125"
-
-        else:
-            dlc = "100"
+            else:
+                dlc = "100"
 
     else:
         dlc = "100"
