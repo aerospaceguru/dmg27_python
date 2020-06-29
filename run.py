@@ -310,6 +310,9 @@ def rigid():
             else:
                 dlc = "100"
 
+        else:
+            dlc = "100"
+
     else:
         dlc = "100"
 
